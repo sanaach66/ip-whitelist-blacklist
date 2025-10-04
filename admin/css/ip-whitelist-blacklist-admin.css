@@ -1,0 +1,164 @@
+/* Main Container */
+.ipwb-admin {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sections */
+.ipwb-settings-section,
+.ipwb-ip-lists,
+.ipwb-access-logs {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* IP Lists */
+.ipwb-ip-lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ipwb-ip-list {
+    flex: 1;
+    min-width: 300px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ipwb-ip-list.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.ipwb-ip-list h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Forms */
+.ipwb-ip-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.ipwb-ip-form input[type="text"] {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Tables */
+.ipwb-ip-table-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.ipwb-ip-table-container table {
+    margin: 0;
+    border: none;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ipwb-ip-table-container th,
+.ipwb-ip-table-container td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.ipwb-ip-table-container th {
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Access Logs */
+.ipwb-access-logs {
+    overflow-x: auto;
+}
+
+.ipwb-access-logs table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ipwb-access-logs th,
+.ipwb-access-logs td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.ipwb-access-logs th {
+    background-color: #f5f5f5;
+}
+
+/* Notices */
+.notice {
+    margin: 5px 0 15px;
+    padding: 1px 12px;
+}
+
+/* Buttons */
+.button {
+    transition: all 0.2s ease-in-out;
+}
+
+.button-primary {
+    background: #2271b1;
+    border-color: #2271b1;
+}
+
+.button-primary:hover {
+    background: #135e96;
+    border-color: #135e96;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .ipwb-ip-lists {
+        flex-direction: column;
+    }
+    
+    .ipwb-ip-form {
+        flex-direction: column;
+    }
+    
+    .ipwb-ip-form .button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+/* Spinner */
+.spinner {
+    float: none;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+/* Actions */
+.ipwb-actions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Disabled state */
+:disabled,
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
