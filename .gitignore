@@ -1,0 +1,18 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependency folders (if any)
+node_modules/
+vendor/
+
+# IDE/project files
+.vscode/
+.idea/
+
+# Backup or temp files
+*.bak
+*.tmp

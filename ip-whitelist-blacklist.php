@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: IP Whitelist & Blacklist
- * Plugin URI: https://example.com/plugins/ip-whitelist-blacklist
+ * Plugin URI: https://devsanaa.com/
  * Description: Control access to your WordPress login by whitelisting or blacklisting IP addresses.
  * Version: 1.0.0
  * Author: Sana Ullah
